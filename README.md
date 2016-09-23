@@ -7,6 +7,7 @@ Steps
   Setup Dockerfile, Gemfile, Gemfile.lock, and docker-compose.yml as above
   ```
   docker-compose run web rails new . --api --skip-action-mailer --skip-active-record --skip-action-cable --skip-spring --skip-listen --skip-bundle
+  docker-compose build
   ```
   This app does not have a database or asset pipeline (javascript/css)
 
@@ -33,6 +34,9 @@ Steps
 - Add TravisCI
   - add .travis.yml
   - enable on travis-ci.org
+
+- Add some code/tests!
+  run test with `docker-compose web rake`
 
 Tools
 - docker
