@@ -40,6 +40,7 @@ GEM
       tzinfo (~> 1.1)
     arel (7.1.2)
     builder (3.2.2)
+    byebug (9.0.5)
     concurrent-ruby (1.0.2)
     erubis (2.7.0)
     globalid (0.3.7)
@@ -60,6 +61,7 @@ GEM
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
     pkg-config (1.1.7)
+    puma (3.6.0)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -106,7 +108,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  rails (= 5.0.0.1)
+  byebug
+  puma (~> 3.0)
+  rails (~> 5.0.0, >= 5.0.0.1)
+  tzinfo-data
 
 BUNDLED WITH
    1.13.1
