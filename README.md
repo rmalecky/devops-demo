@@ -44,8 +44,9 @@ Steps
   - create key pair for travis IAM user, encrypt and add to travis
   ```
   aws iam create-access-key --user-name devops-demo-travis
+  travis encrypt AWS_ACCESS_KEY_ID=XXXXSECRETXXXX --add
   travis encrypt AWS_SECRET_ACCESS_KEY=XXXXSECRETXXXX --add
-  travis encrypt AWS_SECRET_ACCESS_KEY=XXXXSECRETXXXX --add
+  travis encrypt AWS_ACCOUNT_ID=571400018278 --add
   ```
 
 Tools
