@@ -9,7 +9,4 @@ env:
 
 before_install:
   - pip install --user awscli
-  - export PATH=$PATH:$HOME/.local/bin
-  
-before_script:
   - aws iam get-user
