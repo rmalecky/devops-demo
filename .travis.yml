@@ -20,7 +20,7 @@ script:
 after_success:
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
     $(aws ecr get-login);
-    docker build -t devops-demo .
-    docker tag devops-demo:latest ${AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com/devops-demo:latest
-    docker push ${AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com/devops-demo:latest
+    docker build -t devops-demo .;
+    docker tag devops-demo:latest ${AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com/devops-demo:latest;
+    docker push ${AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com/devops-demo:latest;
     fi
